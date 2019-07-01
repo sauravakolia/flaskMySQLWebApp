@@ -1,0 +1,52 @@
+.form1{
+background: #f3f3f3;
+background:-moz-linear-gradient(90deg, #ccc, #fff); /* Firefox */
+border:1px solid #aaa;
+-moz-border-radius:10px;
+-webkit-border-radius:10px;
+-moz-box-shadow:0 0 15px #aaa;
+-webkit-box-shadow:0 0 15px #aaa;
+margin:15px auto 0;
+padding:30px;
+
+
+margin-bottom:5px;
+color:#333;
+font-family:Arial,sans-serif;
+font-size:12px;
+line-height:16px;
+}
+
+#eos{font-family:Arial,sans-serif;
+font-size:15px; }
+
+input[type=text],
+input[type=password]{
+background-color: #dedad2; 
+border:0px;
+-moz-border-radius:2px;
+-webkit-border-radius:2px;
+padding:5px;
+}
+input[type=text]:focus,
+input[type=password]:focus{
+border-color:#093c75;
+-moz-box-shadow:0 0 3px #0459b7;
+-webkit-box-shadow:0 0 3px #0459b7;
+outline:none; /* Pour enlever le contour jaune lorsque l'on sélectionne un input dans Chrome */
+}
+.submit{
+padding:5px 7px; 
+background-color:#666666;
+color:#FFFFFF;
+-moz-border-radius:2px;
+-webkit-border-radius:2px;
+cursor:pointer;
+}
+.submit:hover{
+background-color:#999999;
+color:#FFFFFF;
+}
+
+
+

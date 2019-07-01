@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>datatable</title>
+</head>
+<body>
+
+	<table align="center" border="1" >
+
+		<thead>
+			<th>id</th>
+			<th>NameAndDesignation</th>
+			<th>CompanyName</th>
+			<th>Email</th>
+			<th>Mobile</th>
+			<th>document1</th>
+			<th>document2</th>
+		</thead>
+		<tbody>
+			{% for post in posts %}
+				<tr>
+				{%for i in post%}
+					{% if i==post[0]%}
+						<!-- <td><a href="">{{i}}</a></td> -->
+						<td>
+							<form>
+								<a href="{{url_for('datatable', type=i)}}">{{i}}</a>
+								
+ 
+							</td>
+							</form>
+					{% elif i==post[5]%}
+						<td><a href="{{url_for('download',type=i)}}"> {{i}}</a></td>		
+					{% elif i==post[6]%}
+						<td><a href="{{url_for('download',type=i)}}"> {{i}}</a></td>			
+					{%else%}	
+						<td>{{i}}</td>
+					{%endif%}	
+
+				{% endfor %}
+				</tr>
+			{% endfor %}	
+			
+		</tbody>
+	</table>
+
+
+	
+</body>
+</html>
